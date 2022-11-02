@@ -131,10 +131,12 @@ h6 {
 span {
 	color: var(--linecolor);
 }
-#home img
+#image-denis
 {
 	width: 100%;
+	height: 387px;
 	margin-top: 54px;
+	background-image: url(../images/denis.png);
 }
 
 #about-me-text {
@@ -295,12 +297,16 @@ h4:hover {
 	height: calculate(650px-33px);
 	margin: 0 auto;
 }
+	#image-denis {
+		background-size: contain;
+		width: 700px;
+		max-width: 100%;
+		height: 287px;
+	}
 	#home {
 		height: 650px;
 	}
-	h1 {
-		font-size: 40px;
-	}
+
 	#skills {
 	height: 857px;
 }
@@ -342,7 +348,7 @@ h4:hover {
 
 @media (min-width: 481px) and (max-width: 768px)
 {
-	
+
 }
 
 
@@ -350,5 +356,145 @@ h4:hover {
 
 @media (max-width: 480px)
 {
-	
+	#home {
+		height: 836px;
+	}
+	#photo {
+	width: 316.5px;
+	margin: 0 auto;
+	z-index: 2;
+	}
+
+	#image-denis {
+	width: 100%;
+	height: 478px;
+	margin-top: 54px;
+	background-image: url(../images/denis2.png);
+	background-size: contain;
+	}
+	.line {
+		width: 0;
+		height: 0;
+	}
+	.image {
+		margin-top: 100px;
+	}
+	#name-text {
+		flex-wrap: wrap;
+	}
+	.block {
+		width: 200px;
+	}
+	h6 {
+		padding-top: 10px;
+		font-weight: 400;
+	}
+	.block:nth-of-type(3) {
+	}
+	ul {
+		margin: 0;
+	}
+
+	#navbar {
+	z-index: 3;
+	margin: auto;
+	top: 40px;
+	width: 320px;
+	position: relative;
+	color: white;
+	text-align: left;
+	height: 60px;
+	font-family: Gilroy;
+}
+#check-menu {
+	display: none;
+}
+label {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	z-index: 3;
+	line-height: 40px;
+}
+.burger-line {
+	position: absolute;
+	top: 20px;
+	right: 3.5px;
+	width: 35px;
+	height: 3px;
+	background: var(--textcolor);
+	transition: .5s all;
+	border-radius: 50px;
+}
+.first {
+	height: 3.5px;
+}
+.second, .third {
+	top: 30px;
+}
+.fourth {
+	top: 40px;
+	height: 3.5px;
+}
+ul {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 700px;
+	bottom: 0;
+	left: 0;
+	transform: translateY(100%);
+	max-height: 0;
+	font-size: 0;
+	overflow: hidden;
+	transition: .5s all;
+}
+ul li a {
+	display: block;
+	width: 100%;
+	padding: 28px 0;
+	text-decoration: none;
+	background-color: #fff;
+	font-weight: bold;
+	font-size: 34px;
+	color: #828282;
+}
+#ru-eng {
+	z-index: 4;
+	height: 0;
+	width: 0;
+	position: absolute;
+	top: 0;
+	right: -100px;
+	color: white;
+}
+span {
+	color: white;
+}
+.main-menu a:hover {
+	color: #070707;
+}
+#check-menu:checked ~ .main-menu{
+	max-height: 812px;
+	font-size: 16px;
+	background-color: white;
+}
+#check-menu:checked ~ .first{
+	display: none;
+}
+#check-menu:checked ~ .second{
+	transform: rotate(45deg);
+	background-color: var(--linecolor);
+}
+#check-menu:checked ~ .third{
+	transform: rotate(-45deg);
+	background-color: var(--linecolor);
+}
+#check-menu:checked ~ .fourth{
+	display: none;
+}
 }
