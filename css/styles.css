@@ -399,6 +399,7 @@ h4:hover {
 	z-index: 3;
 	margin: auto;
 	top: 40px;
+	right: 1px;
 	width: 320px;
 	position: relative;
 	color: white;
@@ -431,14 +432,15 @@ label {
 	border-radius: 50px;
 }
 .first {
-	height: 3.5px;
+	height: 3px;
 }
 .second, .third {
-	top: 30px;
+	top: 29.9px;
+	height: 3px;
 }
 .fourth {
 	top: 40px;
-	height: 3.5px;
+	height: 3px;
 }
 ul {
 	display: block;
@@ -462,6 +464,7 @@ ul li a {
 	font-weight: bold;
 	font-size: 34px;
 	color: #828282;
+	font-family: 'Gilroy', sans-serif;
 }
 #ru-eng {
 	z-index: 4;
